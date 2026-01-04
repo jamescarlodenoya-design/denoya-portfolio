@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Carlo Denoya | Portfolio</title>
+
+<style>
+:root{
+    --primary:#1f3c88;
+    --secondary:#2c7da0;
+    --bg:#f4f6f8;
+    --card:#ffffff;
+    --text:#333;
+}
+
+*{
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(135deg, var(--primary), var(--secondary));
+    padding:60px 20px 90px;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:15px;
+}
+
+.header h1{
+    margin:10px 0 5px;
+    font-size:28px;
+}
+
+.header p{
+    opacity:.9;
+    font-size:15px;
+}
+
+/* MAIN CARD WRAPPER */
+.wrapper{
+    max-width:900px;
+    margin:-70px auto 40px;
+    padding:0 20px;
+}
+
+/* GRID LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+@media(min-width:768px){
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .full{
+        grid-column:1 / -1;
+    }
+}
+
+/* CARD */
+.card{
+    background:var(--card);
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-top:0;
+    color:var(--primary);
+    border-left:5px solid var(--secondary);
+    padding-left:12px;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skills span{
+    background:#e3f2fd;
+    color:var(--primary);
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* LIST */
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px 10px;
+    color:#777;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-1/608665226_850992427795856_3760853622570640921_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF0fkNWzVM4CbEDof0-XZ-Ol4IMIXjFAZ-XggwheMUBn8saklMxzKfE3w9IHlcZO3TkHfxCHn02MeoqhvpTJ1wB&_nc_ohc=NjlvpPQsDmsQ7kNvwHvKhQg&_nc_oc=AdndGw0NgKMYkOqnyi04DxaDUUc430OhK3CcLFdx-ge-qepmk30McaiKH5Tztjpr5rhPFizruIAicfazJlbaeF-g&_nc_zt=24&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=8B6vtqhDuggGwIWr-Vbgag&oh=00_Afpe47UZ6HOAGO_CMLu4oB_-4Vz2UAfH6CL62pLzAOiI8w&oe=69601468" alt="James Carlo Denoya">
+    <h1>James Carlo Denoya</h1>
+    <p>Aspiring Game Developer • BSCS Student</p>
+</header>
+
+<main class="wrapper">
+    <section class="grid">
+
+        <div class="card full">
+            <h2>About Me</h2>
+            <p>
+                I am a Bachelor of Science in Computer Science student with a strong passion
+                for technology and game development. I enjoy learning new programming concepts,
+                solving problems, and transforming creative ideas into functional systems.
+                My goal is to continuously grow as a developer and contribute to meaningful
+                and innovative projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Education</h2>
+            <h3>Kauran National Highschool</h3>
+            <ul>
+                <li>Best in Math</li>
+                <li>Best in Science</li>
+                <li>Best in Research</li>
+                <li>RSPC Silver Medalist</li>
+                <li>Conduct Award</li>
+                <li>Perfect Attendance</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>Python</span>
+                <span>C++</span>
+                <span>Microsoft Word</span>
+                <span>Microsoft Excel</span>
+                <span>Leadership</span>
+            </div>
+        </div>
+
+        <div class="card full">
+            <h2>Projects</h2>
+            <h3>SHS Robotics Research</h3>
+            <p>
+                A senior high school research project focused on designing and developing
+                robotic systems using fundamental engineering and programming concepts.
+                This experience enhanced my analytical thinking, collaboration, and
+                problem-solving skills.
+            </p>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    © jamescarlodenoya@sksu.edu.ph 2025 James Carlo Denoya
+</footer>
+
+</body>
+</html>
